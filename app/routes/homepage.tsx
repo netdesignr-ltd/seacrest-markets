@@ -1,4 +1,4 @@
-import Footer from './footer';
+import Footer from '../components/templates/footer';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
