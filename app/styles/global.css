@@ -27,6 +27,7 @@ iframe {
 }
 
 .wrapper {
+  background: "red";
   position: relative;
   padding-bottom: 200%;
   transform: translateY(-35.95%);

@@ -1,30 +1,15 @@
 import Footer from '../templates/footer';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
+import Faq from "../templates/faq";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { Grid, Box, Container } from '@mui/material';
 import Navbar from '../header';
-import BackgroundVideo from '../BackgroundVideo.tsx';
+import BackgroundVideo from '../BackgroundVideo';
 import { Link } from '@remix-run/react';
 // import styles from "~/styles/global.css";
 
-const Faq = [
-  {
-    heading: 'Lorem ipsum is placeholder text commonly ',
-    description: 'Orders are usually shipped within 1-2 business days after placing the order.',
-  },
-  {
-    heading: 'Lorem ipsum is placeholder text commonly ',
-    description: 'Orders are usually shipped within 1-2 business days after placing the order.',
-  },
-  {
-    heading: 'Lorem ipsum is placeholder text commonly ',
-    description: 'Orders  usually shipped within 1-2 business days after placing the order.',
-  },
-];
+
 const Testimonials = [
   {
     description:
@@ -127,7 +112,7 @@ export default function Homepage() {
         </BackgroundVideo>
       </div>
       {/* Section 2 cards */}
-      <div className="py-20 bg-seacrest-300">
+      <div className="py-20 bg-seacrest-300 ">
         <div>
           <h2 className="red py-8 text-center text-5xl font-bold leading-[45px] tracking-[-0.02em] text-white">
             Features
@@ -212,61 +197,8 @@ export default function Homepage() {
         </div>
       </div>
       {/* faqs */}
-      <div className="bg-seacrest-300">
-        <div>
-          <h2 className="pb-8 pt-12 text-center text-3xl font-bold leading-[60px] tracking-[-0.02em] text-white md:text-5xl ">
-            Frequently Asked Questions
-          </h2>
-          <br />
-          <div className="flex justify-center">
-            <h2 className=" mb-24   w-[847px] text-center  text-xl  font-medium leading-[30px] tracking-[-0.02em] text-seacrest-200">
-              Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for
-              previewing layouts and visual mockups
-            </h2>
-          </div>
-          <section>
-            <div>
-              {Faq.map((data, index) => (
-                <Container key={index} sx={{ marginBottom: '20px' }}>
-                  <div className="flex justify-center rounded-2xl">
-                    <Accordion className="mb-2 w-4/5 rounded-[15px]  md:w-4/5 " sx={{ background: '#161F36' }}>
-                      <AccordionSummary
-                        expandIcon={<img src="/arowtop.png" alt="arowtop" />}
-                        aria-controls="panel2a-content"
-                        id="panel2a-header">
-                        <div className="flex items-center justify-center rounded-2xl">
-                          <Typography
-                            sx={{
-                              color: 'white',
-                              fontWeight: '700',
-                              fontSize: '20px',
-                              lineHeight: '30px',
-                              padding: '28px',
-                            }}>
-                            {data.heading}
-                          </Typography>
-                        </div>
-                      </AccordionSummary>
-
-                      <AccordionDetails>
-                        <Typography className="text-base font-medium text-seacrest-200" sx={{ padding: '28px' }}>
-                          {data.description}
-                        </Typography>
-                      </AccordionDetails>
-                    </Accordion>
-                  </div>
-                </Container>
-              ))}
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-            </div>
-          </section>
-        </div>
-
-        <Footer />
-      </div>
+    <Faq />
+    <Footer />
     </div>
   );
 }

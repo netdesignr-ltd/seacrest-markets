@@ -1,4 +1,4 @@
-import Homepage from './homepage';
+import Homepage from '../components/pages/homepage';
 const index = () => {
   return (
     <div>
