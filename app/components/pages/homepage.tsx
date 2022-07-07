@@ -94,10 +94,10 @@ export default function Homepage() {
                 broker of choice*.
               </h2>
             </div>
-            <div className="text-center">
+            <div className="mt-16 text-center">
               <Link
                 to="/"
-                className="px-8 py-4 mt-8 text-xl text-white rounded-md bg-seacrest-350 font-poppins hover:bg-seacrest-100">
+                className="px-8 py-4 text-xl text-white rounded-md bg-seacrest-350 font-poppins hover:bg-seacrest-100">
                 Ready to start?
               </Link>
             </div>
