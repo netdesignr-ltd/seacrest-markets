@@ -1,14 +1,11 @@
 import Footer from '../templates/footer';
-import Faq from "../templates/faq";
+import Faq from '../templates/faq';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import { Grid, Box, Container } from '@mui/material';
+import { Grid, Box } from '@mui/material';
 import Navbar from '../header';
 import BackgroundVideo from '../BackgroundVideo';
 import { Link } from '@remix-run/react';
-// import styles from "~/styles/global.css";
-
 
 const Testimonials = [
   {
@@ -197,8 +194,8 @@ export default function Homepage() {
         </div>
       </div>
       {/* faqs */}
-    <Faq />
-    <Footer />
+      <Faq />
+      <Footer />
     </div>
   );
 }
