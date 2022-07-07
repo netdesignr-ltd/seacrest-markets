@@ -1,4 +1,4 @@
-import Footer from '../components/templates/footer';
+import Footer from '../templates/footer';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -6,8 +6,8 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { Grid, Box, Container } from '@mui/material';
-import Navbar from './navbar';
-import BackgroundVideo from '../components/BackgroundVideo';
+import Navbar from '../header';
+import BackgroundVideo from '../BackgroundVideo.tsx';
 import { Link } from '@remix-run/react';
 // import styles from "~/styles/global.css";
 
