@@ -18,7 +18,13 @@ module.exports = {
           400: '#131B30',
           450: '#161F36',
           500: '#0B2545',
+          
+       
         },
+        'seacrest-green': {
+          100: '#7AB900',
+        },
+      
         cyan: colors.cyan,
       },
     },
