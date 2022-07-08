@@ -205,7 +205,7 @@ export default function Homepage() {
                         <div className="flex items-center justify-center pb-5 md:justify-start">
                           {[1, 2, 3, 4, 5].map((data, index) => (
                             <div key={index} className="p-1 ">
-                              <img src="./star.svg" alt="star" />
+                              <img src="/star.svg" alt="star" />
                             </div>
                           ))}
                         </div>
