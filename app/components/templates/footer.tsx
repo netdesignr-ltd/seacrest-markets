@@ -2,7 +2,7 @@ import { Link } from '@remix-run/react';
 
 const Footer = () => {
   return (
-    <div className="mx-auto text-center max-w-7xl bg-seacrest-300 md:text-left">
+    <div className="mx-auto text-center max-w-7xl bg-seacrest-300 md:text-left ">
       <div className="flex flex-col items-center justify-center md:items-start md:justify-start">
         <div>{/* Updated logo will come here*/}</div>
         <h3 className="text-base text-white">

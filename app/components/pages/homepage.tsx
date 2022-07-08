@@ -1,30 +1,16 @@
 import Footer from '../templates/footer';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
+import Stats from '../templates/stats';
+import Heatmap from '../templates/heatmap';
+import Platform from '../templates/platform';
+import Newsletter from '../templates/newsletter';
+import Faq from '../templates/faq';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import { Grid, Box, Container } from '@mui/material';
+import { Grid, Box } from '@mui/material';
 import Navbar from '../header';
-import BackgroundVideo from '../BackgroundVideo.tsx';
+import BackgroundVideo from '../BackgroundVideo';
 import { Link } from '@remix-run/react';
-// import styles from "~/styles/global.css";
 
-const Faq = [
-  {
-    heading: 'Lorem ipsum is placeholder text commonly ',
-    description: 'Orders are usually shipped within 1-2 business days after placing the order.',
-  },
-  {
-    heading: 'Lorem ipsum is placeholder text commonly ',
-    description: 'Orders are usually shipped within 1-2 business days after placing the order.',
-  },
-  {
-    heading: 'Lorem ipsum is placeholder text commonly ',
-    description: 'Orders are usually shipped within 1-2 business days after placing the order.',
-  },
-];
 const Testimonials = [
   {
     description:
@@ -103,7 +89,7 @@ export default function Homepage() {
           <Navbar />
           <div className="mt-36">
             <h1 className="pt-8 text-center text-3xl font-bold  leading-[45px] text-white md:pt-0 md:text-6xl">
-              <span className="block pb-8 text-blue-300">Trade with the World's</span>
+              <span className="block pb-4 text-blue-300">Trade with the World's</span>
               #1 Rated Broker
             </h1>
             <div className="flex justify-center max-w-3xl px-5 mx-auto md:px-0">
@@ -127,16 +113,27 @@ export default function Homepage() {
         </BackgroundVideo>
       </div>
       {/* Section 2 cards */}
-      <div className="py-20 bg-seacrest-300">
-        <div>
-          <h2 className="red py-8 text-center text-5xl font-bold leading-[45px] tracking-[-0.02em] text-white">
-            Features
-          </h2>
-          <div className="flex items-center justify-center px-5 md:px-5">
-            <h5 className=" mb-24  w-3/5 text-center  text-base font-medium leading-[45px] tracking-[-0.02em] text-seacrest-200">
-              Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
-            </h5>
+      <div className="relative py-20 bg-seacrest-300 curveBG">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col gap-8 p-5 bg-white md:flex-row rounded-xl md:justify-around">
+            <div className="m-auto">
+              <img src="/fpa-rating-img.svg" alt="fpa" />{' '}
+            </div>
+            <div className="m-auto">
+              <img src="/google-rating.svg" alt="google" />{' '}
+            </div>
+            <div className="m-auto">
+              <img src="/logo-mt4.svg" alt="mtlogo" />{' '}
+            </div>
+            <div className="m-auto">
+              <img src="/tv-logo.svg" alt="tvlogo" />{' '}
+            </div>
           </div>
+        </div>
+        <div className="flex justify-center pb-20">
+          <h2 className=" py-10 text-center text-3xl md:text-5xl font-bold leading-[70px] tracking-[-0.02em] text-white md:w-2/5">
+            Why we are the World's #1 Rated Broker
+          </h2>
         </div>
 
         <div className="mx-auto max-w-7xl">
@@ -172,36 +169,57 @@ export default function Homepage() {
           </div>
         </div>
       </div>
-      <div className="py-20 bg-seacrest-400">
+      {/* Heatmap*/}
+      <div className="relative">
+        <Heatmap />
+      </div>
+      {/* Stats */}
+      <Stats />
+      {/* Platform */}
+      <Platform />
+      {/* Testomonial */}
+      <div className="py-20 bg-white">
         <div className="mx-auto max-w-7xl">
           <div className="pt-5">
-            <h2 className="text-center text-5xl font-medium leading-[60px] text-white md:text-left">Testimonials</h2>
-
-            <br></br>
-            <h2 className="pb-16 text-xl font-medium text-center text-seacrest-200 md:text-left">
-              Lorem ipsum dolor insipir
-            </h2>
+            <div className="flex justify-center pb-10 text-center">
+              <h2 className="md:w-3/5 text-3xl md:text-5xl font-bold text-center leading-[70px] text-seacrest-400 ">
+                What traders like you think of Seacrest Markets
+              </h2>
+            </div>
             <div className="grid grid-cols-1 gap-8 mx-auto place-content-center place-items-center md:grid-cols-3">
               {Testimonials.map((data, index) => (
                 <Grid item xs={12} md={4} key={index}>
                   <Box className="px-5 md:px-0">
                     <Card
                       sx={{
-                        boxShadow: '0px 1px 2px rgba(85, 105, 135, 0.1)',
-                        marginBottom: '56px',
-                        background: '#161F36',
+                        boxShadow: '0px 0px 10px rgba(16, 23, 41, 0.1)',
+
+                        background: 'white',
                         padding: '15px',
                         position: 'relative',
                         overflow: 'visible',
                         borderRadius: '6px',
+                        border: '1px solid #e6e6e6',
                       }}>
                       <div className="p-4">
-                        <h5 className="text-xl font-medium text-center text-white md:text-left">{data.description}</h5>
+                        <div className="flex items-center justify-center pb-5 md:justify-start">
+                          {[1, 2, 3, 4, 5].map((data, index) => (
+                            <div key={index} className="p-1 ">
+                              <img src="/star.svg" alt="star" />
+                            </div>
+                          ))}
+                        </div>
 
-                        <p className="mt-4 text-center text-xl leading-[30px] text-seacrest-200 md:text-left">
+                        <h5 className="pb-10 text-2xl font-medium text-center text-seacrest-300 md:text-left">
+                          {data.description}
+                        </h5>
+
+                        <p className="mt-4 text-lg font-semibold text-center text-seacrest-150 md:text-left">
                           {data.name}
                         </p>
-                        <p className="text-center  leading-[28px] text-seacrest-200 md:text-left">{data.title}</p>
+                        <p className="text-center text-lg leading-[28px] text-seacrest-200 md:text-left">
+                          {data.title}
+                        </p>
                       </div>
                     </Card>
                   </Box>
@@ -211,62 +229,11 @@ export default function Homepage() {
           </div>
         </div>
       </div>
+      {/* Newsletter */}
+      <Newsletter />
       {/* faqs */}
-      <div className="bg-seacrest-300">
-        <div>
-          <h2 className="pb-8 pt-12 text-center text-3xl font-bold leading-[60px] tracking-[-0.02em] text-white md:text-5xl ">
-            Frequently Asked Questions
-          </h2>
-          <br />
-          <div className="flex justify-center">
-            <h2 className=" mb-24   w-[847px] text-center  text-xl  font-medium leading-[30px] tracking-[-0.02em] text-seacrest-200">
-              Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for
-              previewing layouts and visual mockups
-            </h2>
-          </div>
-          <section>
-            <div>
-              {Faq.map((data, index) => (
-                <Container key={index} sx={{ marginBottom: '20px' }}>
-                  <div className="flex justify-center rounded-2xl">
-                    <Accordion className="mb-2 w-4/5 rounded-[15px]  md:w-4/5 " sx={{ background: '#161F36' }}>
-                      <AccordionSummary
-                        expandIcon={<img src="/arowtop.png" alt="arowtop" />}
-                        aria-controls="panel2a-content"
-                        id="panel2a-header">
-                        <div className="flex items-center justify-center rounded-2xl">
-                          <Typography
-                            sx={{
-                              color: 'white',
-                              fontWeight: '700',
-                              fontSize: '20px',
-                              lineHeight: '30px',
-                              padding: '28px',
-                            }}>
-                            {data.heading}
-                          </Typography>
-                        </div>
-                      </AccordionSummary>
-
-                      <AccordionDetails>
-                        <Typography className="text-base font-medium text-seacrest-200" sx={{ padding: '28px' }}>
-                          {data.description}
-                        </Typography>
-                      </AccordionDetails>
-                    </Accordion>
-                  </div>
-                </Container>
-              ))}
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-            </div>
-          </section>
-        </div>
-
-        <Footer />
-      </div>
+      <Faq />
+      <Footer />
     </div>
   );
 }

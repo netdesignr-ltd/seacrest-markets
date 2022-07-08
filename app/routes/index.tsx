@@ -1,4 +1,4 @@
-import Homepage from "../components/pages/homepage.tsx";
+import Homepage from '../components/pages/homepage';
 const index = () => {
   return (
     <div>
