@@ -29,7 +29,7 @@ const Footer = () => {
       <div className="my-2 h-[2px] w-[100%] border border-seacrest-150 bg-seacrest-150"></div>
 
       <div className="flex flex-col items-center space-y-2 pt-[2rem] pb-[5rem] text-center md:flex-row md:items-center md:justify-between md:space-y-0 md:text-left">
-        <h2 className="text-base font-medium text-seacrest-200">© 2022 seacrestStudio. All rights reserved.</h2>
+        <h2 className="text-base font-medium text-seacrest-200">© 2022 Seacrest Markets. All rights reserved.</h2>
 
         <div className="flex items-start justify-center gap-8 py-4">
           <img src="/Twitter.svg" alt="twiter" />
