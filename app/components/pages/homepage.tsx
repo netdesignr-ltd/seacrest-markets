@@ -1,4 +1,8 @@
 import Footer from "../templates/footer";
+import Stats from "../templates/stats";
+import Heatmap from "../templates/heatmap";
+import Plateform from "../templates/plateform";
+import Newsletter from "../templates/newsletter";
 import Faq from "../templates/faq";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -93,7 +97,7 @@ export default function Homepage() {
           <Navbar />
           <div className="mt-36">
             <h1 className="pt-8 text-center text-3xl font-bold  leading-[45px] text-white md:pt-0 md:text-6xl">
-              <span className="block pb-8 text-blue-300">
+              <span className="block pb-4 text-blue-300">
                 Trade with the World's
               </span>
               #1 Rated Broker
@@ -120,8 +124,15 @@ export default function Homepage() {
       </div>
       {/* Section 2 cards */}
       <div className="relative py-20 bg-seacrest-300 curveBG">
+        <div className="container p-5 mx-auto">
+          <div className="flex flex-col gap-8 p-5 bg-white md:flex-row rounded-xl md:justify-around">
+         <div className="m-auto"><img src="/fpa-rating-img.svg"   alt="fpa" /> </div>
+         <div className="m-auto"><img src="/google-rating.svg"   alt="google" /> </div>
+         <div className="m-auto"><img src="/logo-mt4.svg"   alt="mtlogo" /> </div>
+         <div className="m-auto"><img src="/tv-logo.svg"   alt="tvlogo" /> </div>
+          </div></div>
         <div className="flex justify-center pb-20">
-          <h2 className=" py-8 text-center text-5xl font-bold leading-[45px] tracking-[-0.02em] text-white w-2/5">
+          <h2 className=" py-10 text-center text-3xl md:text-5xl font-bold leading-[70px] tracking-[-0.02em] text-white md:w-2/5">
             Why we are the World's #1 Rated Broker
           </h2>
         </div>
@@ -164,15 +175,21 @@ export default function Homepage() {
           </div>
         </div>
       </div>
+                               {/* Heatmap
+               <div className="reletive"><Heatmap/></div>  */}
+                                                          {/* Stats */}
+                                                          <Stats/>
+                                                          {/* Plateform */}
+                                                          <Plateform/>
+                                                              {/* Testomonial */}
       <div className="py-20 bg-white">
         <div className="mx-auto max-w-7xl">
           <div className="pt-5">
             <div className="flex justify-center pb-10 text-center">
-              <h2 className="text-center text-5xl font-bold leading-[45px] tracking-[-0.02em] text-seacrest-400  w-3/5 ">
+              <h2 className="md:w-3/5 text-3xl md:text-5xl font-bold text-center leading-[70px] text-seacrest-400 ">
                 What traders like you think of Seacrest Markets
               </h2>
             </div>
-
             <br></br>
 
             <div className="grid grid-cols-1 gap-8 mx-auto place-content-center place-items-center md:grid-cols-3">
@@ -182,7 +199,7 @@ export default function Homepage() {
                     <Card
                       sx={{
                         boxShadow: "0px 0px 10px rgba(16, 23, 41, 0.1)",
-                        marginBottom: "56px",
+                       
                         background: "white",
                         padding: "15px",
                         position: "relative",
@@ -193,9 +210,9 @@ export default function Homepage() {
                     >
                     
                       <div className="p-4">
-                      <div className="flex items-center pb-5">
+                      <div className="flex items-center justify-center pb-5 md:justify-start">
                       {[1,2,3,4,5].map((data, index) => (
-                       <div key={index} className="p-1"><img src="/star.svg" alt="star"  /></div>
+                       <div key={index} className="p-1 "><img src="/star.svg" alt="star"  /></div>
                       ))}
                       </div>
                     
@@ -218,6 +235,8 @@ export default function Homepage() {
           </div>
         </div>
       </div>
+      {/* Newsletter */}
+          <Newsletter/>
       {/* faqs */}
       <Faq />
       <Footer />

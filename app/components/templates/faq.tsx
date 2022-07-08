@@ -19,9 +19,9 @@ const faq = () => {
     },
   ];
   return (
-    <div className="py-20 bg-seacrest-300">
+    <div className="relative py-20 bg-seacrest-300 footerbg">
       <div>
-        <h2 className="pb-8 pt-12 text-center text-3xl font-bold leading-[60px] tracking-[-0.02em] text-white md:text-5xl ">
+        <h2 className="pb-8 pt-36 text-center text-3xl font-bold leading-[60px] tracking-[-0.02em] text-white md:text-5xl ">
           Frequently Asked Questions
         </h2>
         <br />
@@ -36,7 +36,7 @@ const faq = () => {
             {Faq.map((data, index) => (
               <Container key={index} sx={{ marginBottom: '20px' }}>
                 <div className="flex justify-center rounded-2xl">
-                  <Accordion className="mb-2 w-4/5 rounded-[15px]  md:w-4/5 " sx={{ background: '#161F36' }}>
+                  <Accordion className="mb-2  rounded-[15px]  md:w-4/5 " sx={{ background: '#161F36' }}>
                     <AccordionSummary
                       expandIcon={<img src="/arowtop.png" alt="arowtop" />}
                       aria-controls="panel2a-content"
