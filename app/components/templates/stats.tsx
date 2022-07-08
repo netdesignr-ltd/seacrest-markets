@@ -1,22 +1,22 @@
-import React from "react";
+import React from 'react';
 
 const Stats = () => {
   const stats = [
     {
-      statname: "Spreads From",
-      statvalue: "0.0 Pips ",
+      statname: 'Spreads From',
+      statvalue: '0.0 Pips ',
     },
     {
-      statname: "Execution From",
-      statvalue: " 1 MS ",
+      statname: 'Execution From',
+      statvalue: ' 1 MS ',
     },
     {
-      statname: "Trade Markets",
-      statvalue: " 24/5  ",
+      statname: 'Trade Markets',
+      statvalue: ' 24/5  ',
     },
     {
-      statname: "Deposit & Withdrawal",
-      statvalue: " $0 Fee  ",
+      statname: 'Deposit & Withdrawal',
+      statvalue: ' $0 Fee  ',
     },
   ];
   return (
@@ -31,13 +31,9 @@ const Stats = () => {
         <div>
           <div className="flex-row justify-between gap-10 pt-32 mditems-center md:flex">
             {stats.map((data, index) => (
-              <div key={data}>
-                <h1 className="text-xl font-medium text-center text-seacrest-550">
-                  {data.statname}
-                </h1>
-                <h1 className="text-xl font-bold text-center md:text-5xl text-seacrest-600">
-                  {data.statvalue}
-                </h1>
+              <div key={index}>
+                <h1 className="text-xl font-medium text-center text-seacrest-550">{data.statname}</h1>
+                <h1 className="text-xl font-bold text-center md:text-5xl text-seacrest-600">{data.statvalue}</h1>
               </div>
             ))}
           </div>

@@ -1,10 +1,9 @@
 const Newsletter = () => {
   return (
     <div className="p-5 pb-20 bg-white">
-      <div className="container p-10 mx-auto bg-seacrest-400 rounded-2xl bgOpacity"
-      style={{backgroundImage:'url(/newsletterbg.svg)'}}>
-      
-        <div className="">
+      <div className="mx-auto max-w-7xl bg-seacrest-400 rounded-2xl bgOpacity">
+        {/* style={{ backgroundImage: 'url(/newsletterbg.svg)' }} */}
+        <div className="relative">
           <h1 className="pt-24 pb-1 text-3xl font-bold text-center text-white md:text-4xl ">
             Sign up and get trading now
           </h1>
@@ -14,7 +13,7 @@ const Newsletter = () => {
           <div>
             <div>
               <div className="flex flex-col justify-center gap-3 pb-3 md:flex-row md:items-center">
-                <div className=" xl:w-96">
+                <div className="xl:w-96">
                   <label className="inline-block text-gray-700 form-label"></label>
                   <input
                     type="text"
@@ -24,18 +23,14 @@ const Newsletter = () => {
                   />
                 </div>
                 <div className="h-12 px-5 py-3 rounded-md bg-seacrest-50">
-                  <button className="text-base font-medium text-white">
-                    Subscribe
-                  </button>
+                  <button className="text-base font-medium text-white">Subscribe</button>
                 </div>
               </div>
               <div className="flex items-center justify-center pb-24">
                 <h1 className="mr-3 text-xs font-medium text-seacrest-650">
                   We care about your data in our privacy policy
-                </h1>{" "}
-                <h1 className="px-2 text-xs font-medium text-seacrest-green-150">
-                  privacy policy
-                </h1>
+                </h1>{' '}
+                <h1 className="px-2 text-xs font-medium text-seacrest-green-150">privacy policy</h1>
               </div>
             </div>
           </div>
