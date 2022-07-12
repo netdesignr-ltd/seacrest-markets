@@ -3,12 +3,15 @@ import { Link } from '@remix-run/react';
 const Footer = () => {
   return (
     <div className="mx-auto text-center max-w-7xl bg-seacrest-300 md:text-left ">
-      <div className="flex flex-col items-center justify-center md:items-start md:justify-start">
-        <div>{/* Updated logo will come here*/}</div>
-        <h3 className="text-base text-white">
+      <div className="flex flex-col items-center justify-center pt-5 md:items-start md:justify-start">
+        <Link to="/">
+          <span className="sr-only">Seacrest Markets</span>
+          <img className="w-48" src="/seacrest-markets-white-logo.svg" alt="Seacrest Markets logo" />
+        </Link>
+        {/* <h3 className="text-base text-white ">
           Lorem ipsum is placeholder text <br />
           commonly{' '}
-        </h3>
+        </h3> */}
 
         <div className="flex items-start justify-start py-8 text-center gap-9">
           <Link to="#" className="text-base font-medium text-seacrest-200 hover:text-white ">
@@ -30,7 +33,6 @@ const Footer = () => {
 
       <div className="flex flex-col items-center space-y-2 pt-[2rem] pb-[5rem] text-center md:flex-row md:items-center md:justify-between md:space-y-0 md:text-left">
         <h2 className="text-base font-medium text-seacrest-200">© 2022 Seacrest Markets. All rights reserved.</h2>
-
         <div className="flex items-start justify-center gap-8 py-4">
           <img src="/Twitter.svg" alt="twiter" />
           <img src="/LinkedIn.svg" alt="linkedin" />

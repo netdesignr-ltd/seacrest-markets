@@ -7,7 +7,7 @@ import Faq from '../templates/faq';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { Grid, Box } from '@mui/material';
-import Navbar from '../header';
+import Navbar from '../templates/header';
 import BackgroundVideo from '../BackgroundVideo';
 import { Link } from '@remix-run/react';
 

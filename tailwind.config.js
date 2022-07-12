@@ -3,6 +3,9 @@ const colors = require('tailwindcss/colors');
 module.exports = {
   content: ['./app/**/*.{ts,tsx,jsx,js}', './node_modules/flowbite/**/*.js'],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
