@@ -1,5 +1,8 @@
 import { Grid, Box, Container } from "@mui/material";
-import Subpage from "../../components/templates/subPage";
+import HeroSubPage from "../../components/oranigsms/hero-subpage";
+import Header from "../../components/templates/header";
+import Footer from '~/components/templates/footer';
+
 const Trading = () => {
   const features = [
     {
@@ -15,22 +18,24 @@ const Trading = () => {
   
   const blogs = [
     {
-    Heading:"Header 1" ,
-    Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo massa. Eu dolor aliquet risus gravida nunc at feugiatconsequat purus. Non massa enim vitae duis mattis. Vel inultricies vel fringilla " ,
-    Username: " — John Doe, CEO & Founder " ,    
-    Review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus. " ,          
+    heading:"Header 1" ,
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo massa. Eu dolor aliquet risus gravida nunc at feugiatconsequat purus. Non massa enim vitae duis mattis. Vel inultricies vel fringilla " ,
+    username: " — John Doe, CEO & Founder " ,    
+    review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus. " ,          
    img:"/Rectangle-20-_1_.webp" ,
   },
 ]
   
     
   return (
-    <div className="">
-      <Subpage />
 
-      <div className="bg-white">
-        <Container maxWidth="lg" className="pb-10">
-          <Grid container spacing={4} className="pt-10">
+    <div className="">
+      <Header />
+      <HeroSubPage />
+
+      <div className="bg-white px-8">
+        <div  className="container max-w-7xl  pb-10 ">
+          <Grid container spacing={4} className="pt-10 ">
             <Grid item xs={12} md={8} >
               <Box>
                 <p className="text-xl font-medium text-left text-seacrest-550">
@@ -55,10 +60,10 @@ const Trading = () => {
                     }}
                   >
                     <p className="py-5 text-2xl font-medium ">
-              {data.Review}
+              {data.review}
                     </p>
                     <h1 className="text-lg font-medium text-seacrest-550">
-                      {data.Username}
+                      {data.username}
                     </h1>
                   </div>
                   <p className="py-6 text-lg font-normal text-left text-seacrest-550">
@@ -137,8 +142,8 @@ const Trading = () => {
                     Try Trading with Us
                   </h1>
                 </div>
-                {features.map((data) => (
-                  <div className="flex items-center justify-start ">
+                {features.map((data, index) => (
+                  <div key={index} className="flex items-center justify-start ">
                     <div className="flex items-center justify-center gap-2 ">
                       <svg
                         width="26"
@@ -156,7 +161,7 @@ const Trading = () => {
                             r="9.375"
                             fill="#22C55E"
                             stroke="#16A34A"
-                            stroke-width="1.25"
+                            strokeWidth="1.25"
                           />
                         </g>
                         <path
@@ -171,10 +176,10 @@ const Trading = () => {
                             width="25"
                             height="25"
                             filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB"
+                            colorInterpolationFilters="sRGB"
                           >
                             <feFlood
-                              flood-opacity="0"
+                             floodOpacity="0"
                               result="BackgroundImageFix"
                             />
                             <feColorMatrix
@@ -212,8 +217,9 @@ const Trading = () => {
               </Box>
             </Grid>
           </Grid>
-        </Container>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -20,8 +20,8 @@ import { Link } from '@remix-run/react';
 
 const solutions = [
   {
-    name: 'Analytics',
-    description: 'Get a better understanding of where your traffic is coming from.',
+    name: 'Demo Trading',
+    description: 'Get a better understanding of how trading Works.',
     href: '/',
     icon: ChartBarIcon,
   },
