@@ -3,7 +3,7 @@ import HeroSubPage from '../../components/oranigsms/heroSubPage';
 import Header from '../../components/templates/header';
 import Footer from '~/components/templates/footer';
 
-export default function DemoTrading() {
+export default function LiveTrading() {
   const features = [
     {
       feature: 'Ultra Low Latency',
@@ -30,10 +30,10 @@ export default function DemoTrading() {
 
   const heroData = [
     {
-      title: 'Demo Trading',
+      title: 'Live Trading',
       description:
         'We’re different. Flex is the only saas business platform that lets you run your business on one platform, seamlessly across all digital channels.',
-      buttonText: 'Try Our Demo',
+      buttonText: 'Try Our Live',
       buttonLink: '/',
       image: '/Image-Container.webp',
     },
