@@ -1,5 +1,5 @@
 import Homepage from '../components/pages/homepage';
-import Trading from '../components/pages/trading';
+import Trading from './gettingStarted/demo-Trading'
 import Header from '../components/templates/header';
 import Footer from '~/components/templates/footer';
 const index = () => {

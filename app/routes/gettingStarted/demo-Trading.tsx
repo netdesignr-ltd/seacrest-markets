@@ -1,4 +1,5 @@
 import { Grid, Box, Container } from "@mui/material";
+import Subpage from "../../components/templates/subPage";
 const Trading = () => {
   const features = [
     {
@@ -25,54 +26,12 @@ const Trading = () => {
     
   return (
     <div className="">
-      <div className="container grid grid-cols-2 gap-8 py-32 max-w-7xl place-content-center place-items-center">
-        <div>
-          <div>
-            <div>
-              <h1 className="py-5 pt-8 text-6xl font-bold text-left text-white">
-                Demo Trading
-              </h1>
-            </div>
-            <div></div>{" "}
-            <div className="flex w-3/4 text-left">
-              <h1 className="text-base text-xl text-seacrest-200">
-                We’re different. Flex is the only saas business platform that
-                lets you run your business on one platform, seamlessly across
-                all digital channels.
-              </h1>
-            </div>
-            <div className="text-left">
-              <button className="px-8 py-4 mt-8 text-xl text-white rounded-md bg-seacrest-350 font-poppins hover:bg-seacrest-100">
-                Try Our Demo
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <img src="/Image-Container.webp" width={554} />
-        </div>
-      </div>
-      <div className="max-w-5xl mx-auto">
-        <div className="flex flex-col gap-8 p-5 bg-white md:flex-row rounded-xl md:justify-around">
-          <div className="m-auto">
-            <img src="/fpa-rating-img.svg" alt="fpa" />{" "}
-          </div>
-          <div className="m-auto">
-            <img src="/google-rating.svg" alt="google" />{" "}
-          </div>
-          <div className="m-auto">
-            <img src="/logo-mt4.svg" alt="mtlogo" />{" "}
-          </div>
-          <div className="m-auto">
-            <img src="/tv-logo.svg" alt="tvlogo" />{" "}
-          </div>
-        </div>
-      </div>
+      <Subpage />
 
       <div className="bg-white">
         <Container maxWidth="lg" className="pb-10">
           <Grid container spacing={4} className="pt-10">
-            <Grid item xs={8}>
+            <Grid item xs={12} md={8} >
               <Box>
                 <p className="text-xl font-medium text-left text-seacrest-550">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
@@ -171,16 +130,16 @@ const Trading = () => {
               </Box>
             </Grid>
 
-            <Grid item xs={4}>
+            <Grid item xs={12} md={4} className="order-first md:order-last" >
               <Box>
                 <div className="text-center">
-                  <h1 className="pb-5 text-lg font-medium">
+                  <h1 className="pb-5 text-lg  font-semibold">
                     Try Trading with Us
                   </h1>
                 </div>
                 {features.map((data) => (
                   <div className="flex items-center justify-start ">
-                    <div className="flex items-center justify-center gap-2">
+                    <div className="flex items-center justify-center gap-2 ">
                       <svg
                         width="26"
                         height="26"
@@ -244,7 +203,7 @@ const Trading = () => {
                           </filter>
                         </defs>
                       </svg>
-                      <h1 className="block py-3 text-base font-medium">
+                      <h1 className="block py-3 text-base font-medium ">
                         {data.feature}
                       </h1>
                     </div>
