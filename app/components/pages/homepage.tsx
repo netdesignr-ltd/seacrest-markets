@@ -81,6 +81,26 @@ const features = [
     txt: '6',
   },
 ];
+
+const statsData = [
+  {
+    statName: 'Spreads From',
+    statValue: '0.0 Pips ',
+  },
+  {
+    statName: 'Execution From',
+    statValue: ' 1 MS ',
+  },
+  {
+    statName: 'Trade Markets',
+    statValue: ' 24/5  ',
+  },
+  {
+    statName: 'Deposit & Withdrawal',
+    statValue: ' $0 Fee  ',
+  },
+];
+
 export default function Homepage() {
   return (
     <div>
@@ -174,7 +194,7 @@ export default function Homepage() {
         <Heatmap />
       </div>
       {/* Stats */}
-      <Stats />
+      <Stats statsData={statsData} />
       {/* Platform */}
       <Platform />
       {/* Testomonial */}

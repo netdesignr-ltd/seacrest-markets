@@ -5,7 +5,7 @@ interface IStatsData {
 
 const Stats = ({ statsData }: { statsData: IStatsData[] }) => {
   return (
-    <div className="mt-5 bg-white h-max">
+    <div className="bg-white h-max">
       <div className="container pt-24 mx-auto statsbg ">
         <h1 className="p-10 text-xl font-bold text-center md:text-4xl text-seacrest-450 md:p-0">
           ALL traders are welcome
