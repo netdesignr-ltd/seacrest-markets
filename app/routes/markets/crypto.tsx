@@ -40,20 +40,20 @@ export default function Crypto() {
   ];
   const statsData = [
     {
-      statname: 'Spreads From ',
-      statvalue: '0.0 Pips ',
+      statName: 'Spreads From',
+      statValue: '0.0 Pips ',
     },
     {
-      statname: 'Execution From',
-      statvalue: ' 1 MS ',
+      statName: 'Execution From',
+      statValue: ' 1 MS ',
     },
     {
-      statname: 'Trade Markets',
-      statvalue: ' 24/5  ',
+      statName: 'Trade Markets',
+      statValue: ' 24/5  ',
     },
     {
-      statname: 'Deposit & Withdrawal',
-      statvalue: ' $0 Fee  ',
+      statName: 'Deposit & Withdrawal',
+      statValue: ' $0 Fee  ',
     },
   ];
 

@@ -1,12 +1,11 @@
 interface IStatsData {
-  statname: string;
-  statvalue: string;
+  statName: string;
+  statValue: string;
   
 }
 
 const Stats = ({ statsData } : { statsData : IStatsData[] } ) => {
 
-  console.log(statsData);
   return (
     <div className="mt-5 bg-white h-max">
       <div className="container pt-24 mx-auto statsbg ">
@@ -20,8 +19,8 @@ const Stats = ({ statsData } : { statsData : IStatsData[] } ) => {
           <div className="flex-row justify-between gap-10 pt-32 mditems-center md:flex">
             {statsData.map((data, index) => (
               <div key={index}>
-                <h1 className="text-xl font-medium text-center text-seacrest-550">{data.statname}</h1>
-                <h1 className="text-xl font-bold text-center md:text-5xl text-seacrest-600">{data.statvalue}</h1>
+                <h1 className="text-xl font-medium text-center text-seacrest-550">{data.statName}</h1>
+                <h1 className="text-xl font-bold text-center md:text-5xl text-seacrest-600">{data.statValue}</h1>
               </div>
             ))}
           </div>
