@@ -2,8 +2,30 @@ import { Grid, Box } from '@mui/material';
 import HeroSubPage from '../../components/oranigsms/heroSubPage';
 import Header from '../../components/templates/header';
 import Footer from '~/components/templates/footer';
+import Stats from '~/components/templates/stats';
 
 export default function DemoTrading() {
+  const statsData = [
+    {
+      statname: 'Spreads From',
+      statvalue: '0.0 Pips ',
+    },
+    {
+      statname: 'Execution From',
+      statvalue: ' 1 MS ',
+    },
+    {
+      statname: 'Trade Markets',
+      statvalue: ' 24/5  ',
+    },
+    {
+      statname: 'Deposit & Withdrawal',
+      statvalue: ' $0 Fee  ',
+    },
+  ];
+
+
+  
   const features = [
     {
       feature: 'Ultra Low Latency',
@@ -160,6 +182,7 @@ export default function DemoTrading() {
               </Box>
             </Grid>
           </Grid>
+        <Stats statsData={statsData} />
         </div>
       </div>
       <Footer />
