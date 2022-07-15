@@ -1,5 +1,4 @@
 import { HeroSubPage } from "../../components/oranigsms/heroSubPage";
-import Grid from "@mui/material/Grid";
 import Stats from "../../components/templates/stats";
 import NavBar from "~/components/templates/header";
 import Footer from "~/components/templates/footer";
@@ -81,15 +80,10 @@ const MetaTraderIphone = () => {
         {/* Trade Section */}
 
         <Trading tradingData={tradingData}  />
-
         </div>
-
-
-
         {/* how to install Section  */}
         
         <InstallSection installData={installData}  />
-
         {/* Stats */}
           <Stats statsData={statsData} />
       <Footer />

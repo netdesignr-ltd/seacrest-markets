@@ -17,7 +17,7 @@ const trading = ({ tradingData }: { tradingData : TradingData[] }) => {
             <h2>{data.title}</h2>
           </div>
         <div className="flex justify-center ">
-            <img src={data.image} />
+            <img src={data.image} alt="traderimage" />
           </div>
           <div className="flex justify-center py-10"><div className="max-w-5xl text-center ">
             <h2 className="text-xl font-medium text-seacrest-200">
