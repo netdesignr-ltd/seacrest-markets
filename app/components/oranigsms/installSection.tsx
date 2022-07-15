@@ -5,7 +5,13 @@ interface InstallData {
     heading: string;
    
   }
-const InstallSection = ({ installData } : { installData: InstallData[] } ) => {
+  interface ISection {
+    installData: InstallData[], 
+    heading: string
+  }
+  
+
+const    ISection = ({ installData, heading }: ISection ) => {
   return (
     <div className="py-24 bg-white ">
     <div className="container px-5 max-w-7xl">
@@ -17,7 +23,7 @@ const InstallSection = ({ installData } : { installData: InstallData[] } ) => {
       <div>
         <div>
           <h2 className="py-5 text-5xl font-bold text-center md:text-left text-seacrest-600">
-          How to install MT4 Mac
+          {heading}
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2">
@@ -41,4 +47,4 @@ const InstallSection = ({ installData } : { installData: InstallData[] } ) => {
   )
 }
 
-export default InstallSection
+export default ISection

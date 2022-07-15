@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 import Stats from "../../components/templates/stats";
 import NavBar from "~/components/templates/header";
 import Footer from "~/components/templates/footer";
-import InstallSection from "~/components/oranigsms/installSection";
+import ISection from "~/components/oranigsms/installSection";
 import Trading from "~/components/oranigsms/trading";
 
 const MetaTraderAndroid = () => {
@@ -88,7 +88,7 @@ const MetaTraderAndroid = () => {
 
         {/* how to install Section  */}
         
-        <InstallSection installData={installData}  />
+        <ISection installData={installData} heading="How to  install  for Android" />
 
         {/* Stats */}
           <Stats statsData={statsData} />

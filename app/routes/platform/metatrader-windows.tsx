@@ -80,7 +80,7 @@ const MetaTraderWindows = () => {
        
         {/* Trade Section */}
 
-        <Trading tradingData={tradingData}  />
+        <Trading tradingData ={tradingData}  />
 
         </div>
 
