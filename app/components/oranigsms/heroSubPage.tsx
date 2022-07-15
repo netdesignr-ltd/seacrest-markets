@@ -12,7 +12,7 @@ export const HeroSubPage = ({ heroData }: { heroData: IHeroData[] }) => {
       {heroData.map((data, index: number) => (
         <div
           key={index}
-          className="container grid grid-cols-1 gap-8 p-2 px-8 md:grid-cols-2 md:py-32 md:max-w-7xl place-content-center place-items-center md:px-0">
+          className="container grid grid-cols-1 gap-8 p-2 px-5 md:grid-cols-2 md:py-32 md:max-w-7xl place-content-center place-items-center ">
           <div>
             <div>
               <div>
@@ -35,7 +35,7 @@ export const HeroSubPage = ({ heroData }: { heroData: IHeroData[] }) => {
         </div>
       ))}
 
-      <div className="max-w-5xl p-5 mx-auto">
+      {/* <div className="max-w-5xl p-5 mx-auto">
         <div className="flex flex-col gap-8 p-5 bg-white md:flex-row rounded-xl md:justify-around">
           <div className="m-auto">
             <img src="/fpa-rating-img.svg" alt="fpa" />
@@ -50,7 +50,7 @@ export const HeroSubPage = ({ heroData }: { heroData: IHeroData[] }) => {
             <img src="/tv-logo.svg" alt="tvlogo" />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

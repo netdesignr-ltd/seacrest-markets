@@ -5,16 +5,16 @@ interface IStatsData {
 
 const Stats = ({ statsData }: { statsData: IStatsData[] }) => {
   return (
-    <div className="bg-white h-max">
-      <div className="container pt-24 mx-auto statsbg ">
-        <h1 className="p-10 text-xl font-bold text-center md:text-4xl text-seacrest-450 md:p-0">
+    <div className="py-10 bg-white h-max ">
+      <div className="container px-5 max-w-7xl statsbg ">
+        <h1 className="p-10 pt-10 text-xl font-bold text-center md:text-4xl text-seacrest-450">
           ALL traders are welcome
         </h1>
         <h1 className="p-10 text-xl font-bold text-center md:text-4xl text-seacrest-450 md:p-0">
           including Scalpers, Day-and-News Traders
         </h1>
         <div>
-          <div className="flex-row justify-between gap-10 pt-32 mditems-center md:flex">
+          <div className="flex-row justify-between gap-10 pt-0 md:pt-32 mditems-center md:flex">
             {statsData &&
               statsData.map((data, index) => (
                 <div key={index}>
