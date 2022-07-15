@@ -2,6 +2,8 @@ import { Grid, Box } from '@mui/material';
 import HeroSubPage from '../../components/oranigsms/heroSubPage';
 import Header from '../../components/templates/header';
 import Footer from '~/components/templates/footer';
+import Ratings from '~/components/oranigsms/ratings';
+
 import Stats from '~/components/templates/stats';
 export default function Crypto() {
   const features = [
@@ -61,7 +63,7 @@ export default function Crypto() {
     <div className="">
       <Header />
       <HeroSubPage heroData={heroData} />
-
+      <Ratings />
       <div className="px-8 bg-white">
         <div className="container pb-10 max-w-7xl ">
           <Grid container spacing={4} className="pt-10 ">
