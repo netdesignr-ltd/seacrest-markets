@@ -73,25 +73,25 @@ const platforms = [
   {
     name: 'Metatrader Mac',
     description: 'Get all of your questions answered in our forums or contact support.',
-    href: '/platforms/metatrader-mac',
+    href: '/platform/metatrader-mac',
     icon: SupportIcon,
   },
   {
     name: 'Metatrader Windows',
     description: 'Learn how to maximize our platform to get the most out of it.',
-    href: '/platforms/metatrader-windows',
+    href: '/platform/metatrader-windows',
     icon: BookmarkAltIcon,
   },
   {
     name: 'Metatrader iPhone',
     description: 'See what meet-ups and other events we might be planning near you.',
-    href: '/platforms/metatrader-iphone',
+    href: '/platform/metatrader-iphone',
     icon: CalendarIcon,
   },
   {
     name: 'Metatrader Android',
     description: 'Understand how we take your privacy seriously.',
-    href: '/platforms/metatrader-windows',
+    href: '/platform/metatrader-android',
     icon: ShieldCheckIcon,
   },
 ];
