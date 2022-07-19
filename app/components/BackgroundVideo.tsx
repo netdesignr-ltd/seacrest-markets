@@ -11,7 +11,7 @@ const BackgroundVideo: React.FC<Props> = ({ videoSource, children }) => {
       <div className="player-wrapper">
         <div className="absolute top-0 z-30 w-full">{children}</div>
       
-       <div className="hidden md:block"> 
+       <div> 
          <div className="z-20 video-overlay"></div>
        <ReactPlayer
           muted={true}

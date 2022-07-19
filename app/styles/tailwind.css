@@ -1255,6 +1255,10 @@ input:checked + .toggle-bg {
   margin-top: 3rem;
 }
 
+.mt-36 {
+  margin-top: 9rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -1265,10 +1269,6 @@ input:checked + .toggle-bg {
 
 .mb-2 {
   margin-bottom: 0.5rem;
-}
-
-.mt-36 {
-  margin-top: 9rem;
 }
 
 .mt-4 {
@@ -1461,12 +1461,12 @@ input:checked + .toggle-bg {
   max-width: 32rem;
 }
 
-.max-w-5xl {
-  max-width: 64rem;
-}
-
 .max-w-3xl {
   max-width: 48rem;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .max-w-md {
@@ -2005,6 +2005,10 @@ input:checked + .toggle-bg {
   padding-top: 2rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -2015,10 +2019,6 @@ input:checked + .toggle-bg {
 
 .pb-28 {
   padding-bottom: 7rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
 }
 
 .pb-20 {
@@ -2204,6 +2204,11 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-blue-300 {
+  --tw-text-opacity: 1;
+  color: rgb(164 202 254 / var(--tw-text-opacity));
+}
+
 .text-seacrest-200 {
   --tw-text-opacity: 1;
   color: rgb(136 150 171 / var(--tw-text-opacity));
@@ -2212,11 +2217,6 @@ input:checked + .toggle-bg {
 .text-seacrest-600 {
   --tw-text-opacity: 1;
   color: rgb(42 51 66 / var(--tw-text-opacity));
-}
-
-.text-blue-300 {
-  --tw-text-opacity: 1;
-  color: rgb(164 202 254 / var(--tw-text-opacity));
 }
 
 .text-seacrest-150 {
@@ -2760,14 +2760,14 @@ input:checked + .toggle-bg {
     padding: 0px;
   }
 
-  .md\:py-32 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .md\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .md\:pt-0 {
