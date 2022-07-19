@@ -3,8 +3,8 @@ const Newsletter = () => {
     <div className="p-5 pb-20 bg-white">
       <div className="mx-auto max-w-7xl bg-seacrest-400 rounded-2xl bgOpacity">
         {/* style={{ backgroundImage: 'url(/newsletterbg.svg)' }} */}
-        <div className="relative">
-          <h1 className="pt-24 pb-1 text-3xl font-bold text-center text-white md:text-4xl ">
+        <div className="relative p-5 md:p-0">
+          <h1 className="py-5 pb-1 text-3xl font-bold text-center text-white md:pt-24 md:text-4xl ">
             Sign up and get trading now
           </h1>
           <h1 className="pb-5 text-lg font-medium text-center text-seacrest-200">

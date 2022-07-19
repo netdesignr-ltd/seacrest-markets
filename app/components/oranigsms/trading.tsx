@@ -9,7 +9,7 @@ interface TradingData {
 const trading = ({ tradingData }: { tradingData : TradingData[] }) => {
   return (
     <div className="relative ">
-        <div className="curvePlateform"></div>
+        <div className="hidden md:block curvePlateform "></div>
         {tradingData.map((data, index) => (
         <div className="container px-8 max-w-7xl place-content-center md:px-0" key={index}>
           

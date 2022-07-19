@@ -10,6 +10,7 @@ import { Grid, Box } from '@mui/material';
 import Navbar from '../templates/header';
 import BackgroundVideo from '../BackgroundVideo';
 import { Link } from '@remix-run/react';
+import Ratings from '../oranigsms/ratings';
 
 const Testimonials = [
   {
@@ -110,7 +111,7 @@ export default function Homepage() {
           <div className="mt-36">
             <h1 className="pt-8 text-center text-3xl font-bold  leading-[45px] text-white md:pt-0 md:text-6xl">
               <span className="block pb-4 text-blue-300">Trade with the World's</span>
-              #1 Rated Broker
+              #1 Rated Broker   
             </h1>
             <div className="flex justify-center max-w-3xl px-5 mx-auto md:px-0">
               <h2 className="pt-12 text-xl text-center text-white leading-12">
@@ -133,23 +134,9 @@ export default function Homepage() {
         </BackgroundVideo>
       </div>
       {/* Section 2 cards */}
-      <div className="relative py-20 bg-seacrest-300 curveBG">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col gap-8 p-5 bg-white md:flex-row rounded-xl md:justify-around">
-            <div className="m-auto">
-              <img src="/fpa-rating-img.svg" alt="fpa" />{' '}
-            </div>
-            <div className="m-auto">
-              <img src="/google-rating.svg" alt="google" />{' '}
-            </div>
-            <div className="m-auto">
-              <img src="/logo-mt4.svg" alt="mtlogo" />{' '}
-            </div>
-            <div className="m-auto">
-              <img src="/tv-logo.svg" alt="tvlogo" />{' '}
-            </div>
-          </div>
-        </div>
+      <div className="relative py-20 bg-seacrest-300 ">
+        <div className="hidden curveBG md:block"> </div>
+     <Ratings />
         <div className="flex justify-center pb-20">
           <h2 className=" py-10 text-center text-3xl md:text-5xl font-bold leading-[70px] tracking-[-0.02em] text-white md:w-2/5">
             Why we are the World's #1 Rated Broker
@@ -191,7 +178,7 @@ export default function Homepage() {
       </div>
       {/* Heatmap*/}
       <div className="relative">
-        <Heatmap />
+       <div className='px-8 bg-white'><Heatmap /></div> 
       </div>
       {/* Stats */}
       <Stats statsData={statsData} />
