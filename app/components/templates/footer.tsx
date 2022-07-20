@@ -14,16 +14,11 @@ const Footer = () => {
         </h3> */}
 
         <div className="flex items-start justify-start py-8 text-center gap-9">
-          <Link to="#" className="text-base font-medium text-seacrest-200 hover:text-white ">
-            Features
+          
+          <Link to="/about-us" className="text-base font-medium text-seacrest-200 hover:text-white">
+           About
           </Link>
-          <Link to="#" className="text-base font-medium text-seacrest-200 hover:text-white">
-            Pricing
-          </Link>
-          <Link to="#" className="text-base font-medium text-seacrest-200 hover:text-white">
-            FAQ
-          </Link>
-          <Link to="#" className="text-base font-medium text-seacrest-200 hover:text-white">
+          <Link to="/contact-us" className="text-base font-medium text-seacrest-200 hover:text-white">
             Contact
           </Link>
         </div>
