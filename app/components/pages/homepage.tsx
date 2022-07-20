@@ -10,6 +10,8 @@ import { Grid, Box } from '@mui/material';
 import Navbar from '../templates/header';
 import BackgroundVideo from '../BackgroundVideo';
 import { Link } from '@remix-run/react';
+import Ratings from '../oranigsms/ratings';
+import Hero from '../oranigsms/hero';
 
 const Testimonials = [
   {
@@ -100,56 +102,25 @@ const statsData = [
     statValue: ' $0 Fee  ',
   },
 ];
-
 export default function Homepage() {
   return (
     <div>
-      <div className="min-h-screen">
-        <BackgroundVideo videoSource={'https://vimeo.com/726372740'}>
+      <div className="hidden min-h-screen md:block">
+        <BackgroundVideo videoSource={'https://vimeo.com/726372740'} >
           <Navbar />
-          <div className="mt-36">
-            <h1 className="pt-8 text-center text-3xl font-bold  leading-[45px] text-white md:pt-0 md:text-6xl">
-              <span className="block pb-4 text-blue-300">Trade with the World's</span>
-              #1 Rated Broker
-            </h1>
-            <div className="flex justify-center max-w-3xl px-5 mx-auto md:px-0">
-              <h2 className="pt-12 text-xl text-center text-white leading-12">
-                Our fast execution speeds, tight spreads, deep liquidity and commitment to transparency makes us the
-                broker of choice*.
-              </h2>
-            </div>
-            <div className="text-center">
-              <button className="px-8 py-4 mt-8 text-xl text-white rounded-md bg-seacrest-350 font-poppins hover:bg-seacrest-100">
-                Ready to start?
-              </button>
-            </div>
-            <div className="mt-8 text-center text-white">
-              Not ready? <br /> Try a{' '}
-              <Link to="/" className="hover:text-seacrest-200">
-                Free Demo Account
-              </Link>
-            </div>
-          </div>
+          <Hero />
         </BackgroundVideo>
       </div>
+      <div className="min-h-screen md:hidden " style={{ backgroundImage: 
+        "url('/mobilebgn.webp')",
+        backgroundSize: 'cover',}}>
+          <Navbar />
+          <Hero />
+      </div>
       {/* Section 2 cards */}
-      <div className="relative py-20 bg-seacrest-300 curveBG">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col gap-8 p-5 bg-white md:flex-row rounded-xl md:justify-around">
-            <div className="m-auto">
-              <img src="/fpa-rating-img.svg" alt="fpa" />{' '}
-            </div>
-            <div className="m-auto">
-              <img src="/google-rating.svg" alt="google" />{' '}
-            </div>
-            <div className="m-auto">
-              <img src="/logo-mt4.svg" alt="mtlogo" />{' '}
-            </div>
-            <div className="m-auto">
-              <img src="/tv-logo.svg" alt="tvlogo" />{' '}
-            </div>
-          </div>
-        </div>
+      <div className="relative py-20 bg-seacrest-300 ">
+        <div className="hidden curveBG md:block"> </div>
+     <Ratings />
         <div className="flex justify-center pb-20">
           <h2 className=" py-10 text-center text-3xl md:text-5xl font-bold leading-[70px] tracking-[-0.02em] text-white md:w-2/5">
             Why we are the World's #1 Rated Broker
@@ -191,7 +162,7 @@ export default function Homepage() {
       </div>
       {/* Heatmap*/}
       <div className="relative">
-        <Heatmap />
+       <div className='px-8 bg-white'><Heatmap /></div> 
       </div>
       {/* Stats */}
       <Stats statsData={statsData} />
@@ -225,7 +196,7 @@ export default function Homepage() {
                         <div className="flex items-center justify-center pb-5 md:justify-start">
                           {[1, 2, 3, 4, 5].map((data, index) => (
                             <div key={index} className="p-1 ">
-                              <img src="/star.svg" alt="star" />
+                             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 17.9896L18.9375 21.875L17.2292 14.5521L22.9167 9.625L15.4271 8.98958L12.5 2.08333L9.57291 8.98958L2.08333 9.625L7.77083 14.5521L6.0625 21.875L12.5 17.9896Z" fill="#FF8A00"/></svg>
                             </div>
                           ))}
                         </div>

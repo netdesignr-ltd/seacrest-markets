@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-
 type Props = {
   videoSource: string;
   children: React.ReactNode;
@@ -11,8 +10,10 @@ const BackgroundVideo: React.FC<Props> = ({ videoSource, children }) => {
     <div className="relative">
       <div className="player-wrapper">
         <div className="absolute top-0 z-30 w-full">{children}</div>
-        <div className="z-20 video-overlay"></div>
-        <ReactPlayer
+      
+       <div> 
+         <div className="z-20 video-overlay"></div>
+       <ReactPlayer
           muted={true}
           loop={true}
           playing={true}
@@ -21,6 +22,7 @@ const BackgroundVideo: React.FC<Props> = ({ videoSource, children }) => {
           width="100%"
           height="100%"
         />
+        </div> 
       </div>
     </div>
   );

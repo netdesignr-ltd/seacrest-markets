@@ -19,7 +19,8 @@ const faq = () => {
     },
   ];
   return (
-    <div className="relative py-20 bg-seacrest-300 footerbg">
+    <div className="relative py-20 bg-seacrest-300 ">
+      <div className='hidden footerbg md:block'></div>
       <div>
         <h2 className="pb-8 pt-36 text-center text-3xl font-bold leading-[60px] tracking-[-0.02em] text-white md:text-5xl ">
           Frequently Asked Questions
