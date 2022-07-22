@@ -53,33 +53,33 @@ const Testimonials = [
 ];
 const features = [
   {
-    title: 'Custom analytics',
-    description: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing',
+    title: 'Tight Spreads',
+    description: 'Enjoy spreads as low as 0.0 pips with deep tier 1 liquidity aggregation',
     txt: '1',
   },
   {
-    title: 'Custom analytics',
-    description: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing',
+    title: 'Hyperfast Execution',
+    description: 'Up to 99.8% fill rate on all orders',
     txt: '2',
   },
   {
-    title: 'Custom analytics',
-    description: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing',
+    title: 'Next Generation Platforms',
+    description: 'Execute trades on Metatrader 5',
     txt: '3',
   },
   {
-    title: 'Custom analytics',
-    description: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing',
+    title: 'Leverage Flexibility',
+    description: 'Utilize up to 500:1 trading leverage',
     txt: '4',
   },
   {
-    title: 'Custom analytics',
-    description: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing',
+    title: ' Low Commissions',
+    description: '2$ per lot commissions on ECN accounts',
     txt: '5',
   },
   {
-    title: 'Custom analytics',
-    description: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing',
+    title: ' 24/7 Support',
+    description: 'Contact our support team at anytime day and night',
     txt: '6',
   },
 ];
@@ -132,7 +132,9 @@ export default function Homepage() {
             {features.map((data, index) => (
               <div key={index} className="px-5 md:px-0">
                 <Card
-                  sx={{
+                  sx={{ 
+                    maxWidth: '350px',
+                    minHeight: '220px',
                     boxShadow: '0px 1px 2px rgba(85, 105, 135, 0.1)',
                     marginBottom: '56px',
                     background: '#161F36',
@@ -147,10 +149,9 @@ export default function Homepage() {
                     </div>
                   </div>
                   <CardContent>
-                    <h3 className="whitespace-normal text-xl font-bold leading-[30px] text-white">
+                    <h3 className=" whitespace-nowrap text-xl font-bold leading-[30px] text-white">
                       {data.title}
-                      <br />
-                      analytics
+                   
                     </h3>
                     <p className="pt-5 text-md text-seacrest-200">{data.description}</p>
                   </CardContent>
